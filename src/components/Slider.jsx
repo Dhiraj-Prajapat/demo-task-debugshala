@@ -3,7 +3,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import "./Slider.css";
 
 const Slider = () => {
   const cards = [
