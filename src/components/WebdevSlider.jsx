@@ -3,9 +3,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import {aiCard} from "../cardData";
+import { webDev} from "../cardData";
 
-const Slider = () => {
+const WebdevSlider = () => {
   
   return (
     <div className="w-full max-md mx-auto">
@@ -23,13 +23,13 @@ const Slider = () => {
         loop={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
       >
-        {aiCard.map((card, index) => (
+        {webDev.map((card, index) => (
           <SwiperSlide key={index}>
             <div
               className={`relative justify-center items-center border border-gray-300 text-center text-xl min-h-[100px] rounded-xl hover:cursor-pointer `}
             >
               <div
-                className={`absolute z-10 top-0 right-1 py-2 px-4 text-white rounded-tr-xl rounded-bl-xl ${card.gradientClass}`}
+                className={`absolute z-10 top-0 right-0 py-2 px-4 text-white rounded-tr-xl rounded-bl-xl ${card.gradientClass}`}
               >
                 bestseller
               </div>
@@ -59,4 +59,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default WebdevSlider;
